@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage</title>
+
+    <style>
+        body {
+      font-family: Helvetica, Arial, sans-serif;
+      margin: 0 auto;
+      padding: 20px;
+      max-width: 1300px;
+      border: 10px solid rgb(240, 240, 240);
+      background-color: #fdfaf4;
+    }
+    .navigation_bar{
+            gap: 30px;
+            background-color: rgb(102, 84, 58);
+            display: flex;
+            padding: 15px;
+            justify-content: center;
+            color: bisque;
+            padding: 3%;
+        }
+        .navigation_bar a{
+            color: beige;
+            padding: 15px;
+            font-size: 18px;
+            text-decoration: none;
+        }
+        .navigation_bar a:hover{
+            color: rgb(228, 213, 193);
+            cursor: pointer;
+            border-radius: 5px;
+            background-color: rgb(85, 73, 49);
+        }
+        .navigation_bar img{
+            width: 100px;
+        }
+        .navigation_bar h2{
+            color: rgb(204, 194, 171);
+        }
+        header{
+            align-items: left;
+            background-color: rgb(255, 255, 255);
+            margin-top: 2px;
+            padding: 1%;
+            border: 1.5px solid rgb(68, 68, 68);
+            border-radius: 8px;
+            height: 25%;
+        }
+        .btn{
+            margin-top: 10px;
+        }
+        header h2{
+        font-size: 34px;
+        font-family: helvetica;
+        color: rgb(85, 73, 49);
+        margin-left: 4%;
+        margin-top: 4%;
+        width: 30%;
+        padding: 10%;
+
+        }
+        header button{
+            margin-top: 0%;
+            font-size: 18px;
+            padding-left: 50px;
+            padding-right: 50px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            border-radius: 14px;
+            border: none;
+            font-family: Helvetica;
+            color: rgb(204, 194, 171);
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.8);
+            cursor: pointer;
+            background-color: rgb(110, 99, 82);
+        }
+        header button:hover{
+            background-color: rgb(214, 199, 172);
+        }
+        header img{
+            width: 700px;
+            height: 400px;
+            float: right;
+            margin: 4%;
+            border-radius: 3px;
+        }
+        .recipes_advertising{
+            margin-top: 7%;
+        }
+        .recipes_advertising h2{
+            text-align: center;
+            color: rgb(83, 71, 63);
+            font-size: 30px;
+            border-bottom: 1px solid rgb(63, 51, 43);
+        }
+
+        .allrecipes{
+            display: flex;
+            margin: 50px;
+        }
+        .r1{
+        background-color: rgb(255, 253, 251);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        margin: 2px;
+        width: 20%;
+        padding: 20px;
+        color: rgb(129, 109, 95);
+        }
+        .r1 h4{
+        font-size: 20px;
+        }
+        .r1 img{
+            width: 240px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .r1 button{
+            padding: 15px;
+            border-radius: 10px;
+            border: solid rgb(63, 51, 43) 1px;
+            color: rgb(68, 56, 31);
+            font-size: 15px;
+            width: 95%;
+        }
+
+        .r2{
+        background-color: rgb(255, 253, 251);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        margin: 2px;
+        width: 20%;
+        padding: 20px;
+        color: rgb(78, 56, 42);
+        }
+        .r2 h4{
+        font-size: 20px;
+        }
+        .r2 img{
+            width: 240px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .r2 button{
+            padding: 15px;
+            border-radius: 10px;
+            border: solid rgb(63, 51, 43) 1px;
+            color: rgb(68, 56, 31);
+            font-size: 15px;
+            width: 95%;
+        }
+
+        .r3{
+        background-color: rgb(255, 253, 251);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        margin: 2px;
+        width: 20%;
+        padding: 20px;
+        color: rgb(117, 104, 96);
+        }
+        .r3 h4{
+        font-size: 20px;
+        }
+        .r3 img{
+            width: 240px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .r3 button{
+            padding: 15px;
+            border-radius: 10px;
+            border: solid rgb(63, 51, 43) 1px;
+            color: rgb(68, 56, 31);
+            font-size: 15px;
+            width: 95%;
+        }
+
+        .r4{
+        background-color: rgb(255, 253, 251);
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+        border-radius: 10px;
+        margin: 2px;
+        width: 20%;
+        padding: 20px;
+        color: rgb(63, 51, 43);
+        }
+        .r4 h4{
+        font-size: 20px;
+        }
+        .r4 img{
+            width: 240px;
+            height: 200px;
+            border-radius: 10px;
+        }
+        .r4 button{
+            padding: 15px;
+            border-radius: 10px;
+            border: solid rgb(63, 51, 43) 1px;
+            color: rgb(68, 56, 31);
+            font-size: 15px;
+            width: 95%;
+        }
+
+        footer{
+            border: 1px solid black;
+            padding: 20px;
+        }
+        button{
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navigation_bar">
+        <img class="logo" src="DISH-removebg-preview.png" alt="website_logo">
+        <h2>Dish Delight</h2>
+
+        <a href="index.html">Homepage</a>
+        <a href="aboutus.html">About Us</a>
+        <a href="recipes.html">Recipes</a>
+        <a href="Tips and Techniques.html">Tips and Techniques</a>
+        <a href="reviewsandrating 1.html">Reviews and Ratings</a>
+    </nav>
+
+    <header>
+        <img class="header_img" src="food 1.jpg" alt="header_img">
+
+        <div class="btn">
+        <h2 class="caption">Cook like a pro with our Easy and Tasty Recipes!</h2>
+        <a href="recipes.html"><button class="start_button">Start</button></a>
+        </div>
+    </header>
+    <main>
+        <section class="recipes_advertising">
+            <h2>Popular Traditional Recipes from around the world</h2>
+
+        <div class="allrecipes">
+            <div class="r1">
+                <h4>Tomyum Goong</h4>
+                <p>Tom Yum Goong is a spicy, sour Thai prawn soup with fragrant herbs.</p>
+                <img src="Tom-Yum-07-mini.webp" alt="Tomyum">
+                <a href="Tom Yum Goong.html"><button>Check out the Recipe</button></a>
+            </div>
+
+            <div class="r2">
+                <h4>Pasta(Carbonara)</h4>
+                <p>Carbonara pasta is a creamy Italian dish made with eggs, cheese, and pepper.</p>
+                <img src="carbonara.png" alt="pasta">
+                <a href="Pasta Carbonara.html"><button>Check out the Recipe</button></a>
+            </div>
+
+            <div class="r3">
+                <h4>Lasagna</h4>
+                <p>Lasagna is a layered Italian dish with pasta, rich sauce, and melted cheese.</p>
+                <img src="lasagna.jpg" alt="kimchi">
+                <a href="lasagna.html"><button>Check out the Recipe</button></a>
+            </div>
+
+            <div class="r4">
+                <h4>Chocolate Croissant</h4>
+                <p>The chocolate croissant is a French pastry filled with rich, melted chocolate.</p>
+                <img src="chocolate croissant.png" alt="kimchi">
+                <a href="chocolate croissant.html"><button>Check out the Recipe</button></a>
+            </div>
+        </div>
+        </section>
+    </main>
+    <footer>
+        <h3>Contact Us</h3>
+        <p>Ph No: 09-5682093</p>
+        <p>Email: idk@gmail.com</p>
+    </footer>
+</body>
+</html>
